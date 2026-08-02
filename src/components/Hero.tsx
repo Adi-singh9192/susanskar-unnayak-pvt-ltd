@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowDown, Flame, Award, Users, HeartCrack, ChevronRight } from "lucide-react";
+import heroImage from "../assets/images/hero.png";
 
 export default function Hero() {
   const handleScrollTo = (id: string) => {
@@ -48,7 +49,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="src/assets/images/hero.png"
+          src={heroImage}
           alt="Immersive youth environment"
           className="w-full h-full object-cover opacity-35"
           referrerPolicy="no-referrer"
