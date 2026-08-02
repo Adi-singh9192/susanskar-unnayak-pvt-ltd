@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --void: #08010F;
+  --deep: #100720;
+  --smoke: #1A0B2E;
+
+  --magenta: #FF1CF7;
+  --citrus: #E8FF00;
+  --violet: #7B2FFF;
+  --teal: #00FFD1;
+
+  --cream: #F0EDE8;
+  --muted: rgba(240,237,232,0.5);
+}
+
+@theme {
+  --font-sans: "Poppins", "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  
+  --color-nav-bg: rgba(16, 7, 32, 0.8);
+  --color-navy-dark: #100720;
+  
+  --animate-float-slow: float-slow 6s ease-in-out infinite;
+  --animate-float-medium: float-medium 4s ease-in-out infinite;
+  --animate-float-fast: float-fast 3s ease-in-out infinite;
+  
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+  }
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(-1.5deg); }
+  }
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #08010F;
+  color: #F0EDE8;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #FF1CF7;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #100720;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A0B2E;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7B2FFF;
+}
