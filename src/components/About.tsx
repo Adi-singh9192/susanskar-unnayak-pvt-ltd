@@ -8,7 +8,7 @@ export default function About() {
 
   const collageImages = [
     {
-      url: "./assets/images/content1.png",
+      url: "../assets/images/content1.png",
       alt: "Bharat Mandapam Style Premium Summit Stage",
       span: "col-span-6 h-48 sm:h-56",
     },
