@@ -3,27 +3,32 @@ import { motion, AnimatePresence } from "motion/react";
 import { milestones } from "../data";
 import { Award, Compass, Eye, Landmark, MapPin, Users, Target } from "lucide-react";
 
+import content1 from "../assets/images/content1.png";
+import content2 from "../assets/images/content2.png";
+import content3 from "../assets/images/content3.png";
+import content4 from "../assets/images/content4.png";
+
 export default function About() {
   const [selectedMilestone, setSelectedMilestone] = useState(milestones[2]); // Default 2023
 
   const collageImages = [
     {
-      url: "../assets/images/content1.png",
+      url: content1,
       alt: "Bharat Mandapam Style Premium Summit Stage",
       span: "col-span-6 h-48 sm:h-56",
     },
     {
-      url: "./assets/images/content2.png",
+      url: content2,
       alt: "Grand Indian Palace Ballroom and Heritage Hall",
       span: "col-span-6 h-48 sm:h-56 mt-4",
     },
     {
-      url: "./assets/images/content3.png",
+      url: content3,
       alt: "Traditional Premium Indian Celebration Venue",
       span: "col-span-6 h-48 sm:h-56 -mt-4",
     },
     {
-      url: "./assets/images/content4.png",
+      url: content4,
       alt: "Massive Youth Concert Arena Production",
       span: "col-span-6 h-48 sm:h-56",
     },
