@@ -8,22 +8,22 @@ export default function About() {
 
   const collageImages = [
     {
-      url: ".src/assets/images/content1.png",
+      url: "./src/assets/images/content1.png",
       alt: "Bharat Mandapam Style Premium Summit Stage",
       span: "col-span-6 h-48 sm:h-56",
     },
     {
-      url: ".src/assets/images/content2.png",
+      url: "./src/assets/images/content2.png",
       alt: "Grand Indian Palace Ballroom and Heritage Hall",
       span: "col-span-6 h-48 sm:h-56 mt-4",
     },
     {
-      url: ".src/assets/images/content3.png",
+      url: "./src/assets/images/content3.png",
       alt: "Traditional Premium Indian Celebration Venue",
       span: "col-span-6 h-48 sm:h-56 -mt-4",
     },
     {
-      url: ".src/assets/images/content4.png",
+      url: "./src/assets/images/content4.png",
       alt: "Massive Youth Concert Arena Production",
       span: "col-span-6 h-48 sm:h-56",
     },
